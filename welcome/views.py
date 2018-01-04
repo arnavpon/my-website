@@ -9,6 +9,7 @@ from .models import PageView
 # Create your views here.
 
 # render(request, template, dict) - returns an HttpResponse object w/ result of rendered template
+# the render function expects there to be a 'templates' folder in the app to pull files
 
 def index(request):
     hostname = os.getenv('HOSTNAME', 'unknown')
