@@ -24,6 +24,4 @@ def health(request):
     return HttpResponse(PageView.objects.count())
 
 def linked_pages(request, page):  # parses requests -> links
-    print("called linked pages view...")
-    print("Requested Page: {}".format(page))
     return render(request, 'welcome/{}'.format(page))
