@@ -19,9 +19,3 @@ urlpatterns = [
 #  - route: a URL pattern, searches from TOP -> BOTTOM;
 #  - view: the view called when Django finds a matching pattern, sends a HttpRequest object as argument
 #  - name: allows you to unambiguously name the URL to refer to it from within templates
-
-if settings.DEBUG:
-    import debug_toolbar
-    urlpatterns = [
-        url(r'^__debug__/', include("debug_toolbar.urls")),
-    ] + urlpatterns
