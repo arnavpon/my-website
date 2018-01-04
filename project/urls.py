@@ -11,7 +11,7 @@ urlpatterns = [
 
     url(r'^$', index),
     url(r'^admin/', include(admin.site.urls)),
-]
+]  #
 
 if settings.DEBUG:
     import debug_toolbar
