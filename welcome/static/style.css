@@ -10,7 +10,6 @@ aside, footer, header, hgroup, section {
 body {
   color: #404040;
   font-family: "Helvetica Neue",Helvetica,"Liberation Sans",Arial,sans-serif;
-  font-size: 16px;
   line-height: 1.4;
   width: 100%;
   padding: 10px;
@@ -24,36 +23,6 @@ html {
 
 ul {
     margin-top: 0;
-}
-
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-  .col-sm-6 {
-    float: left;
-  }
-  .col-sm-6 {
-    width: 50%;
-  }
-}
-
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-  .col-md-6 {
-    float: left;
-  }
-  .col-md-6 {
-    width: 50%;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
 }
 
 a {
@@ -81,7 +50,6 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 25em;
   font-weight: 300;
   border-bottom: 1px solid #000;
   margin-bottom: .5em;
@@ -94,11 +62,9 @@ h1:after {
   background-color: #ddd;
 }
 h2 {
-  font-size: 19px;
   font-weight: 400;
 }
 h3 {
-  font-size: 15px;
   font-weight: 400;
   margin: 0 0 .3em;
 }
@@ -138,4 +104,3 @@ pre {
   overflow: auto;
   font-family: Menlo,Monaco,"Liberation Mono",Consolas,monospace !important;
 }
-
