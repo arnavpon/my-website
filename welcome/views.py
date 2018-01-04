@@ -8,6 +8,8 @@ from .models import PageView
 
 # Create your views here.
 
+# render(request, template, dict) - returns an HttpResponse object w/ result of rendered template
+
 def index(request):
     hostname = os.getenv('HOSTNAME', 'unknown')
     PageView.objects.create(hostname=hostname)
@@ -20,3 +22,8 @@ def index(request):
 
 def health(request):
     return HttpResponse(PageView.objects.count())
+
+def linked_pages(request, page):  # parses requests -> links
+    print("called linked pages view...")
+    print("Requested Page: {}".format(page))
+    return render(request, 'welcome/{}'.format(page))
